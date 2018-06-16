@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAPI", "Services\Authentication Service\IdentityAPI\IdentityAPI.csproj", "{E322BEAE-72A3-4D80-888E-E169FB91D691}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthService", "AuthService", "{73EA44BD-04AE-400A-A655-61839D79116B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductService", "ProductService", "{DA16AA34-C3D7-4C54-8F8F-A000D041AB3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductAPI", "Services\Product Service\ProductAPI\ProductAPI.csproj", "{774343EA-93A5-47CE-9A47-3E5AE4F1BEBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCommerce", "Web\SampleApp\SimpleCommerce.csproj", "{06CF331C-A617-4DC8-8E19-DA7FE4D1E5C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCommerce.Web.Models", "Web\SampleApp.Web.Models\SimpleCommerce.Web.Models.csproj", "{388ADB04-AF48-4B9F-854B-E44869F7A0EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCommerce.Core", "SimpleCommerce.Core\SimpleCommerce.Core.csproj", "{FE94C368-82C7-47D4-A018-F61A7639B6ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E322BEAE-72A3-4D80-888E-E169FB91D691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E322BEAE-72A3-4D80-888E-E169FB91D691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E322BEAE-72A3-4D80-888E-E169FB91D691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E322BEAE-72A3-4D80-888E-E169FB91D691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774343EA-93A5-47CE-9A47-3E5AE4F1BEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774343EA-93A5-47CE-9A47-3E5AE4F1BEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774343EA-93A5-47CE-9A47-3E5AE4F1BEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774343EA-93A5-47CE-9A47-3E5AE4F1BEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CF331C-A617-4DC8-8E19-DA7FE4D1E5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CF331C-A617-4DC8-8E19-DA7FE4D1E5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06CF331C-A617-4DC8-8E19-DA7FE4D1E5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06CF331C-A617-4DC8-8E19-DA7FE4D1E5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388ADB04-AF48-4B9F-854B-E44869F7A0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388ADB04-AF48-4B9F-854B-E44869F7A0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388ADB04-AF48-4B9F-854B-E44869F7A0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388ADB04-AF48-4B9F-854B-E44869F7A0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE94C368-82C7-47D4-A018-F61A7639B6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE94C368-82C7-47D4-A018-F61A7639B6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE94C368-82C7-47D4-A018-F61A7639B6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE94C368-82C7-47D4-A018-F61A7639B6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E322BEAE-72A3-4D80-888E-E169FB91D691} = {73EA44BD-04AE-400A-A655-61839D79116B}
+		{774343EA-93A5-47CE-9A47-3E5AE4F1BEBC} = {DA16AA34-C3D7-4C54-8F8F-A000D041AB3E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {450FD16C-00BB-4F67-A81A-4FA46B1C9A70}
+	EndGlobalSection
+EndGlobal

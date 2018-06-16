@@ -1,0 +1,47 @@
+@{
+    Layout = "_LayoutRoot";
+
+}
+
+<div class="header py-4">
+    <div class="container">
+        <div class="d-flex">
+            <a class="header-brand" href="/">
+                <img src='@Url.Content("/images/logo.jpg")' class="header-brand-img" alt="SimpleCommerce logo">
+            </a>
+            <div class="d-flex order-lg-2 ml-auto">
+                @Html.Partial("_LoginPartial")
+            </div>
+            <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                <span class="header-toggler-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-3 ml-auto">
+
+            </div>
+            <div class="col-lg order-lg-first">
+                <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                    <li class="nav-item">
+                        <a href="@Url.Action("Index","Home")" class="nav-link" id="homelink"><i class="fe fe-home"></i> Home</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="my-3 my-md-5">
+    <div class="container">
+        @RenderBody()
+    </div>
+</div>
+
+
+@section Scripts{
+    @RenderSection("Scripts", required: false)
+}

@@ -1,0 +1,149 @@
+INFO  2018-06-17 01:16:28,050 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/values  
+INFO  2018-06-17 01:16:28,050 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 01:16:28,947 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 973.7775ms 200 
+INFO  2018-06-17 01:16:31,402 [9    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 01:16:31,410 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 01:16:31,427 [9    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 01:16:31,501 [9    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 01:16:31,535 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 146.9073ms
+INFO  2018-06-17 01:16:31,625 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3689.2674ms 401 
+INFO  2018-06-17 01:18:16,422 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Values  
+INFO  2018-06-17 01:18:16,599 [11   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 01:18:16,602 [11   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 01:18:16,609 [11   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 01:18:16,628 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ValuesController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 01:18:16,637 [11   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-06-17 01:18:16,720 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 64.7263ms
+INFO  2018-06-17 01:18:16,764 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 333.842ms 200 application/json; charset=utf-8
+INFO  2018-06-17 01:21:53,573 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 01:21:53,632 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/values  
+INFO  2018-06-17 01:21:53,859 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 496.5932ms 200 
+INFO  2018-06-17 01:21:58,268 [10   ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 01:21:58,276 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 01:21:58,309 [10   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 01:21:59,802 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 01:21:59,810 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 1731.2537ms
+INFO  2018-06-17 01:22:00,216 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6664.0595ms 401 
+INFO  2018-06-17 01:22:26,781 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Values  
+INFO  2018-06-17 01:22:26,930 [9    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 01:22:27,019 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 01:22:27,159 [9    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 01:22:27,809 [9    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 01:22:27,814 [9    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 01:22:27,817 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 1030.4603ms
+INFO  2018-06-17 01:22:27,827 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1210.9342ms 401 
+INFO  2018-06-17 01:31:53,020 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/values  
+INFO  2018-06-17 01:31:53,044 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 01:31:53,202 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 360.315ms 200 
+INFO  2018-06-17 01:32:01,469 [10   ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 01:32:01,515 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 01:32:01,784 [10   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 01:32:01,986 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 01:32:02,036 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 833.9082ms
+INFO  2018-06-17 01:32:02,270 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9223.5524ms 401 
+INFO  2018-06-17 01:34:33,604 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Values  
+INFO  2018-06-17 01:34:33,804 [8    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 01:34:33,810 [8    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 01:34:33,824 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 01:34:33,869 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ValuesController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 01:34:33,885 [8    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-06-17 01:34:33,941 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 119.9074ms
+INFO  2018-06-17 01:34:33,949 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 407.4918ms 200 application/json; charset=utf-8
+INFO  2018-06-17 01:34:49,951 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Values/1  
+INFO  2018-06-17 01:34:49,964 [8    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 01:34:49,978 [8    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 01:34:50,122 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 01:34:50,187 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ValuesController.Get (ProductAPI) with arguments (1) - ModelState is Valid
+INFO  2018-06-17 01:44:03,882 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 01:44:03,882 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/values  
+INFO  2018-06-17 01:44:04,036 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 211.228ms 200 
+INFO  2018-06-17 01:44:05,186 [9    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 01:44:05,200 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 01:44:05,216 [9    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 01:44:05,252 [9    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 01:44:05,272 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 112.3297ms
+INFO  2018-06-17 01:44:05,616 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1465.4578ms 401 
+INFO  2018-06-17 01:45:00,328 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/  
+INFO  2018-06-17 01:45:00,524 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 158.1529ms 404 
+INFO  2018-06-17 01:45:05,510 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 01:45:05,627 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 51.7364ms 200 text/html
+INFO  2018-06-17 01:45:06,561 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 01:45:06,983 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 432.1086ms 200 application/json;charset=utf-8
+INFO  2018-06-17 01:45:21,136 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Values/1  
+INFO  2018-06-17 01:45:21,178 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 01:45:21,182 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 01:45:21,259 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 01:45:21,443 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ValuesController.Get (ProductAPI) with arguments (1) - ModelState is Valid
+INFO  2018-06-17 02:01:23,318 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/values  
+INFO  2018-06-17 02:01:23,363 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 02:01:25,719 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2996.2284ms 200 
+INFO  2018-06-17 02:01:28,992 [9    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 02:01:28,997 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 02:01:29,013 [9    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 02:01:29,038 [9    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 02:01:29,046 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 87.084ms
+INFO  2018-06-17 02:01:29,161 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7091.9815ms 401 
+INFO  2018-06-17 02:02:56,037 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Values/1  
+INFO  2018-06-17 02:02:56,114 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 02:02:56,133 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 02:02:56,198 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 02:02:56,277 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ValuesController.Get (ProductAPI) with arguments (1) - ModelState is Valid
+INFO  2018-06-17 02:02:56,315 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-06-17 02:02:56,340 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ValuesController.Get (ProductAPI) in 143.5754ms
+INFO  2018-06-17 02:02:56,347 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 503.3725ms 200 text/plain; charset=utf-8
+INFO  2018-06-17 03:18:29,505 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/values  
+INFO  2018-06-17 03:18:29,505 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 03:18:30,438 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1634.5901ms 200 
+INFO  2018-06-17 03:18:32,268 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3689.2237ms 404 
+INFO  2018-06-17 03:22:17,552 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 03:22:17,599 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 03:22:18,879 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1920.3297ms 200 
+INFO  2018-06-17 03:22:26,508 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9384.7856ms 200 text/html
+INFO  2018-06-17 03:22:27,678 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://127.0.0.1:31809/iisintegration  0
+INFO  2018-06-17 03:22:27,911 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 987.2231ms 202 
+INFO  2018-06-17 03:22:37,518 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 03:22:37,934 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 430.6616ms 200 application/json;charset=utf-8
+INFO  2018-06-17 03:22:37,943 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://127.0.0.1:18573/iisintegration  0
+INFO  2018-06-17 03:22:37,944 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4556ms 202 
+INFO  2018-06-17 03:26:28,231 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 03:26:28,343 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 03:26:29,620 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1451.1075ms 200 
+INFO  2018-06-17 03:26:34,195 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6332.2568ms 200 text/html
+INFO  2018-06-17 03:26:40,343 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 03:26:41,144 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 732.6412ms 200 application/json;charset=utf-8
+INFO  2018-06-17 03:35:00,550 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 03:35:00,728 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 03:35:04,394 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5381.1161ms 200 
+INFO  2018-06-17 03:35:11,330 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12383.1102ms 200 text/html
+INFO  2018-06-17 03:35:14,036 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 03:35:15,495 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1243.0775ms 200 application/json;charset=utf-8
+INFO  2018-06-17 03:39:39,182 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 03:39:39,252 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 03:39:39,774 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 847.0407ms 200 
+INFO  2018-06-17 03:39:40,816 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1976.1831ms 200 text/html
+INFO  2018-06-17 03:39:43,036 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 03:39:43,451 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 423.3451ms 200 application/json;charset=utf-8
+INFO  2018-06-17 03:53:57,970 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 03:53:57,971 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 03:53:58,377 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 438.4941ms 200 
+INFO  2018-06-17 03:54:01,129 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3229.0135ms 200 text/html
+INFO  2018-06-17 03:54:03,630 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 03:54:04,945 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1126.7588ms 200 application/json;charset=utf-8
+WARN  2018-06-17 03:54:53,211 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Heartbeat took longer than "00:00:01" at "06/16/2018 19:54:53 +00:00".
+INFO  2018-06-17 03:55:09,034 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/products  0
+INFO  2018-06-17 03:55:09,137 [4    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 03:55:09,146 [4    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 03:55:09,192 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 155.4172ms 404 
+INFO  2018-06-17 03:57:17,950 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 03:57:17,950 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 03:57:18,110 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 276.0174ms 200 
+INFO  2018-06-17 03:57:20,073 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1924.6841ms 200 text/html
+INFO  2018-06-17 03:57:20,231 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 03:57:20,507 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 273.7229ms 200 application/json;charset=utf-8
+INFO  2018-06-17 03:58:32,514 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Products  
+INFO  2018-06-17 03:58:32,669 [8    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 03:58:32,685 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 03:58:32,702 [8    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 03:58:32,709 [8    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 03:58:32,724 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 64.6094ms
+INFO  2018-06-17 03:58:32,736 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 236.1705ms 401 
