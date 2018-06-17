@@ -15744,3 +15744,417 @@ INFO  2018-06-17 03:54:53,294 [8    ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2018-06-17 03:54:53,425 [8    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was successfully authenticated.
 INFO  2018-06-17 03:54:53,521 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: yaxu1.
 INFO  2018-06-17 03:54:53,529 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:48:37,310 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:3000/  0
+INFO  2018-06-17 13:48:37,319 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 13:48:39,178 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2292.3659ms 200 
+INFO  2018-06-17 13:48:43,165 [9    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 13:48:43,189 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 13:48:43,258 [9    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 13:48:43,303 [9    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was challenged.
+INFO  2018-06-17 13:48:43,317 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 212.9619ms
+INFO  2018-06-17 13:48:43,371 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6517.4242ms 302 
+INFO  2018-06-17 13:48:43,381 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/Account/Login/?ReturnUrl=%2F  
+INFO  2018-06-17 13:48:43,714 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (/) - ModelState is Valid
+INFO  2018-06-17 13:48:57,996 [8    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+INFO  2018-06-17 13:49:00,726 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 16970.489ms
+INFO  2018-06-17 13:49:00,965 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/css/site.css  
+INFO  2018-06-17 13:49:00,981 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17603.7063ms 200 text/html; charset=utf-8
+INFO  2018-06-17 13:49:01,070 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/js/site.js?v=DzPkaNZPQJt9iZAQVgYMLzitkWr-Ub-iwb7S9nr4SVc  
+INFO  2018-06-17 13:49:01,083 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/site.css was not modified
+INFO  2018-06-17 13:49:01,272 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 457.481ms 304 text/css
+INFO  2018-06-17 13:49:01,285 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/site.js was not modified
+INFO  2018-06-17 13:49:01,303 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 305.8225ms 304 application/javascript
+INFO  2018-06-17 13:49:23,353 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:3000/Account/Login?returnUrl=%2F application/x-www-form-urlencoded 212
+INFO  2018-06-17 13:49:23,367 [8    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-06-17 13:49:23,729 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (SimpleCommerce.Web.Models.SignInViewModel, /) - ModelState is Valid
+INFO  2018-06-17 13:49:25,664 [8    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+INFO  2018-06-17 13:49:25,676 [8    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /.
+INFO  2018-06-17 13:49:25,688 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 2276.7719ms
+INFO  2018-06-17 13:49:25,712 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2482.8491ms 302 
+INFO  2018-06-17 13:49:25,734 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 13:49:25,744 [14   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was successfully authenticated.
+INFO  2018-06-17 13:49:25,754 [14   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: yaxu1.
+INFO  2018-06-17 13:49:25,767 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:49:32,596 [14   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2018-06-17 13:49:34,016 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 8262.4379ms
+ERROR 2018-06-17 13:49:34,932 [14   ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'SimpleCommerce.Models.HomeViewModel', but this ViewDataDictionary instance requires a model item of type 'SimpleCommerce.Web.Models.User'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.<RenderPartialCoreAsync>d__60.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.<PartialAsync>d__57.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName)
+   at AspNetCore._Views_Shared__Layout_cshtml.<ExecuteAsync>d__0.MoveNext() in C:\Users\XuYa\source\repos\JWTNetCoreSample\Web\SampleApp\Views\Shared\_Layout.cshtml:line 13
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2018-06-17 13:49:35,555 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9749.3952ms 500 text/html; charset=utf-8
+INFO  2018-06-17 13:58:46,604 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 13:58:46,723 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:3000/  0
+INFO  2018-06-17 13:58:48,029 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1925.0642ms 200 
+INFO  2018-06-17 13:58:53,574 [8    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 13:58:54,012 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 13:58:54,147 [8    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 13:58:55,679 [8    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was challenged.
+INFO  2018-06-17 13:58:56,573 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 2794.104ms
+INFO  2018-06-17 13:58:57,713 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10812.3856ms 302 
+INFO  2018-06-17 13:58:58,024 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/Account/Login/?ReturnUrl=%2F  
+INFO  2018-06-17 13:58:59,365 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (/) - ModelState is Valid
+INFO  2018-06-17 13:59:15,856 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+INFO  2018-06-17 13:59:17,142 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 18860.2936ms
+INFO  2018-06-17 13:59:17,212 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20193.4496ms 200 text/html; charset=utf-8
+INFO  2018-06-17 14:02:58,206 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:3000/Account/Login?returnUrl=%2F application/x-www-form-urlencoded 212
+INFO  2018-06-17 14:02:58,214 [9    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-06-17 14:02:58,387 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (SimpleCommerce.Web.Models.SignInViewModel, /) - ModelState is Valid
+INFO  2018-06-17 14:03:00,684 [9    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+INFO  2018-06-17 14:03:00,709 [9    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /.
+INFO  2018-06-17 14:03:00,721 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 2468.7671ms
+INFO  2018-06-17 14:03:00,740 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2576.2307ms 302 
+INFO  2018-06-17 14:03:00,776 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 14:03:00,784 [17   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was successfully authenticated.
+INFO  2018-06-17 14:03:00,792 [17   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: yaxu1.
+INFO  2018-06-17 14:03:00,800 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 14:03:07,781 [17   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2018-06-17 14:03:08,924 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 8131.5096ms
+ERROR 2018-06-17 14:03:09,410 [17   ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore._Views_Shared__LoginPartial_cshtml.<ExecuteAsync>d__13.MoveNext() in C:\Users\XuYa\source\repos\JWTNetCoreSample\Web\SampleApp\Views\Shared\_LoginPartial.cshtml:line 9
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.<RenderPartialCoreAsync>d__60.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.<PartialAsync>d__57.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName)
+   at AspNetCore._Views_Shared__Layout_cshtml.<ExecuteAsync>d__0.MoveNext() in C:\Users\XuYa\source\repos\JWTNetCoreSample\Web\SampleApp\Views\Shared\_Layout.cshtml:line 13
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2018-06-17 14:03:10,242 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9457.2017ms 500 text/html; charset=utf-8
+INFO  2018-06-17 14:13:54,110 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 14:13:54,151 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:3000/  0
+INFO  2018-06-17 14:13:56,837 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4796.8172ms 200 
+INFO  2018-06-17 14:14:08,383 [11   ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 14:14:09,470 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 14:14:10,652 [11   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 14:14:12,016 [11   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was challenged.
+INFO  2018-06-17 14:14:13,247 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 4955.8583ms
+INFO  2018-06-17 14:14:13,901 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22981.011ms 302 
+INFO  2018-06-17 14:14:14,153 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/Account/Login/?ReturnUrl=%2F  
+INFO  2018-06-17 14:14:17,295 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (/) - ModelState is Valid
+INFO  2018-06-17 14:14:30,457 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+INFO  2018-06-17 14:14:31,920 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 16311.9008ms
+INFO  2018-06-17 14:14:32,065 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17926.1449ms 200 text/html; charset=utf-8
+INFO  2018-06-17 14:14:52,010 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:3000/Account/Login?returnUrl=%2F application/x-www-form-urlencoded 212
+INFO  2018-06-17 14:14:52,023 [8    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-06-17 14:14:52,213 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (SimpleCommerce.Web.Models.SignInViewModel, /) - ModelState is Valid
+INFO  2018-06-17 14:14:54,715 [8    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+INFO  2018-06-17 14:14:54,728 [8    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /.
+INFO  2018-06-17 14:14:54,738 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 2653.8289ms
+INFO  2018-06-17 14:14:54,768 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2769.3243ms 302 
+INFO  2018-06-17 14:14:54,781 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 14:14:54,797 [9    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was successfully authenticated.
+INFO  2018-06-17 14:14:54,836 [9    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: yaxu1.
+INFO  2018-06-17 14:14:55,050 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 14:15:10,345 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2018-06-17 14:15:11,263 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 16367.091ms
+INFO  2018-06-17 14:15:11,345 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16507.3334ms 200 text/html; charset=utf-8
+INFO  2018-06-17 14:15:12,237 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/lib/tabler/dist/assets/fonts/feather/feather-webfont.woff?t=1501841394106  
+INFO  2018-06-17 14:15:12,310 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-06-17 14:15:12,430 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/tabler/dist/assets/fonts/feather/feather-webfont.woff'. Physical path: 'C:\Users\XuYa\source\repos\JWTNetCoreSample\Web\SampleApp\wwwroot\lib\tabler\dist\assets\fonts\feather\feather-webfont.woff'
+INFO  2018-06-17 14:15:12,579 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 341.4496ms 200 application/font-woff
+INFO  2018-06-17 14:22:16,065 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:3000/  0
+INFO  2018-06-17 14:22:16,467 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 14:22:18,492 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2585.9576ms 200 
+INFO  2018-06-17 14:22:24,816 [8    ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 14:22:24,979 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 14:22:25,392 [8    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 14:22:25,860 [8    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was challenged.
+INFO  2018-06-17 14:22:26,443 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 1564.9816ms
+INFO  2018-06-17 14:22:27,364 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11999.9629ms 302 
+INFO  2018-06-17 14:22:27,955 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/Account/Login/?ReturnUrl=%2F  
+INFO  2018-06-17 14:22:29,379 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (/) - ModelState is Valid
+INFO  2018-06-17 14:22:39,779 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+INFO  2018-06-17 14:22:41,511 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 13093.4174ms
+INFO  2018-06-17 14:22:41,551 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14577.9798ms 200 text/html; charset=utf-8
+INFO  2018-06-17 14:23:03,107 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/Account/Login/?ReturnUrl=%2F  
+INFO  2018-06-17 14:23:03,117 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (/) - ModelState is Valid
+INFO  2018-06-17 14:23:03,676 [10   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+INFO  2018-06-17 14:23:03,744 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 597.8699ms
+INFO  2018-06-17 14:23:03,812 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 762.7372ms 200 text/html; charset=utf-8
+INFO  2018-06-17 14:23:04,528 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/favicon.ico  
+INFO  2018-06-17 14:23:04,674 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\XuYa\source\repos\JWTNetCoreSample\Web\SampleApp\wwwroot\favicon.ico'
+INFO  2018-06-17 14:23:05,329 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 731.2676ms 200 image/x-icon
+INFO  2018-06-17 14:23:27,406 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/Account/Login/?ReturnUrl=%2F  
+INFO  2018-06-17 14:23:27,438 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (/) - ModelState is Valid
+INFO  2018-06-17 14:23:28,015 [14   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+INFO  2018-06-17 14:23:28,499 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 895.7974ms
+INFO  2018-06-17 14:23:28,701 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1108.692ms 200 text/html; charset=utf-8
+INFO  2018-06-17 14:23:29,063 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/favicon.ico  
+INFO  2018-06-17 14:23:29,076 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\XuYa\source\repos\JWTNetCoreSample\Web\SampleApp\wwwroot\favicon.ico'
+INFO  2018-06-17 14:23:29,120 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 77.5387ms 200 image/x-icon
+INFO  2018-06-17 14:23:39,755 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:3000/Account/Login?returnUrl=%2F application/x-www-form-urlencoded 212
+INFO  2018-06-17 14:23:39,809 [14   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-06-17 14:23:39,986 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) with arguments (SimpleCommerce.Web.Models.SignInViewModel, /) - ModelState is Valid
+INFO  2018-06-17 14:23:42,423 [14   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+INFO  2018-06-17 14:23:42,434 [14   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /.
+INFO  2018-06-17 14:23:42,474 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.AccountController.Login (SimpleCommerce) in 2601.776ms
+INFO  2018-06-17 14:23:42,513 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2804.9785ms 302 
+INFO  2018-06-17 14:23:42,528 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/  
+INFO  2018-06-17 14:23:42,540 [8    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was successfully authenticated.
+INFO  2018-06-17 14:23:42,552 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: yaxu1.
+INFO  2018-06-17 14:23:42,564 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 14:23:52,663 [8    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2018-06-17 14:23:54,933 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleCommerce.Controllers.HomeController.Index (SimpleCommerce) in 12113.7927ms
+INFO  2018-06-17 14:23:54,980 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12430.2216ms 200 text/html; charset=utf-8
+INFO  2018-06-17 14:24:19,412 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/lib/tabler/dist/assets/js/vendors/bootstrap.bundle.min.js.map  
+INFO  2018-06-17 14:24:19,421 [16   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was successfully authenticated.
+INFO  2018-06-17 14:24:19,429 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.7853ms 404 
+INFO  2018-06-17 14:24:19,691 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:3000/lib/bootstrap/dist/css/bootstrap.css.map  
+INFO  2018-06-17 14:24:20,970 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\XuYa\source\repos\JWTNetCoreSample\Web\SampleApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+INFO  2018-06-17 14:24:21,598 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1882.2494ms 200 text/plain

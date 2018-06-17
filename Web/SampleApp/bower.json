@@ -2,17 +2,6 @@
   "name": "asp.net",
   "private": true,
   "dependencies": {
-    "jquery": "3.3.1",
-    "bootstrap": "v4.1.1",
-    "jquery-validation-unobtrusive": "v3.2.9",
-    "jquery-validation": "1.17.0",
-    "magnific-popup": "1.1.0",
-    "photoswipe": "v4.1.2",
     "sweetalert2": "v7.21.1"
-  },
-  "resolutions": {
-    "bootstrap": "v4.1.1",
-    "jquery": "3.3.1",
-    "jquery-validation-unobtrusive": "v3.2.9"
   }
 }

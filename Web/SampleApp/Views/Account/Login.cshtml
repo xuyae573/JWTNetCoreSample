@@ -3,6 +3,7 @@
 @model SignInViewModel
 @{
     Layout = "_LayoutRoot";
+    ViewBag.Title = "Login";
 }
 <div class="page-single">
     <div class="container">
@@ -16,7 +17,7 @@
                         <div class="card-title">Login to your account</div>
                         <div class="form-group">
                             <label class="form-label" asp-for="UserId"></label>
-                            <input asp-for="UserId" class="form-control" placeholder="Enter Username">
+                            <input asp-for="UserId" class="form-control" placeholder="Enter userid">
                       
                         </div>
                         <div class="form-group">

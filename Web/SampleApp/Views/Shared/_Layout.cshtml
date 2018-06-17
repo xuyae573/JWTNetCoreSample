@@ -7,10 +7,10 @@
     <div class="container">
         <div class="d-flex">
             <a class="header-brand" href="/">
-                <img src='@Url.Content("/images/logo.jpg")' class="header-brand-img" alt="SimpleCommerce logo">
+               Simple Commerce App
             </a>
             <div class="d-flex order-lg-2 ml-auto">
-                @Html.Partial("_LoginPartial")
+                @await Component.InvokeAsync(typeof(LoginPartialComponent))
             </div>
             <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
                 <span class="header-toggler-icon"></span>

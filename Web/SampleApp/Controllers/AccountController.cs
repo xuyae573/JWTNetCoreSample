@@ -53,6 +53,7 @@ namespace SimpleCommerce.Controllers
                     var claimsIdentity = new ClaimsIdentity(new Claim[] { new Claim(ClaimTypes.Name, model.UserId),}, "Basic");
                     claimsIdentity.AddClaim(new Claim(ClaimTypes.Expiration, result.ExpireInSeconds.ToString()));
                     claimsIdentity.AddClaim(new Claim(ClaimTypesConstants.AccessToken, result.AccessToken));
+      
                     var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
                     await HttpContext.SignInAsync(claimsPrincipal);
                     return RedirectToLocal(returnUrl);

@@ -36,7 +36,6 @@
  
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
-    <PackageReference Include="PusherServer" Version="4.1.0" />
  
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.0.4" />
     <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="2.1.0" />
@@ -51,7 +50,7 @@
 
   <ItemGroup>
     <Folder Include="Middleware\" />
-    <Folder Include="wwwroot\images\demo\" />
+    <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
   <ItemGroup>

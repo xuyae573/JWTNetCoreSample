@@ -9,6 +9,7 @@
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
+    using System.Security.Claims;
 
     [Authorize]
     public class HomeController : Controller
@@ -35,17 +36,9 @@
         {
             var viewModel = new HomeViewModel();
             var claims = HttpContext.User.Claims;
-
             var tokenClaim = claims.First(x => x.Type == ClaimTypesConstants.AccessToken).Value.ToString();
- 
             viewModel.Products = _productClient.GetAllProducts(tokenClaim);
-           
             return View(viewModel);
         }
-
-   
-      
-
-        
     }
 }

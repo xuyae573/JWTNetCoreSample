@@ -1,0 +1,26 @@
+﻿
+@using SimpleCommerce.Web.Models
+
+@model User
+
+@{
+    Layout = null;
+}
+<div class="dropdown">
+    <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+        <span class="avatar avatar-azure">@Model.UserId.Substring(0, 2)<span class="avatar-status bg-green"></span></span>
+
+        <span class="ml-2 d-none d-lg-block">
+            <span class="text-default" id="username">@Model.UserId</span>
+            <small class="text-muted d-block mt-1"></small>
+        </span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" id="signoutMenu" href="#">
+            <i class="dropdown-icon fe fe-log-out"></i> Sign out
+        </a>
+    </div>
+</div>
+<form asp-area="" asp-controller="Account" asp-action="SignOut" method="post" id="logoutForm"></form>

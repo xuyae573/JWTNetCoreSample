@@ -1,15 +1,33 @@
 ﻿@model HomeViewModel
-
+@{
+    ViewBag.Title = " Product List";
+}
 
 <div class="page-header">
     <h1 class="page-title">
-        Simple Store
+        Simple Store - @ViewBag.Title
     </h1>
 </div>
 <div class="row row-cards">
     <div class="col-lg-12">
         <div class="card">
             <table class="table card-table table-vcenter">
+                <thead>
+                    <tr>
+                        <th>
+                            Product Name
+                        </th>
+                        <th>
+                            Sku
+                        </th>
+                        <th>
+                            CreateBy
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                    </tr>
+                </thead>
                 <tbody>
                     @foreach (var prod in Model.Products)
                     {
@@ -17,8 +35,8 @@
                             <td>
                                 @prod.Name
                             </td>
-                            <td class="text-right text-muted d-none d-md-table-cell text-nowrap">98 reviews</td>
-                            <td class="text-right text-muted d-none d-md-table-cell text-nowrap">38 offers</td>
+                            <td class="text-right text-muted d-none d-md-table-cell text-nowrap">@prod.Sku</td>
+                            <td class="text-right text-muted d-none d-md-table-cell text-nowrap">@prod.CreateBy</td>
                             <td class="text-right">
                                 <strong>$@prod.Price</strong>
                             </td>
@@ -28,5 +46,4 @@
             </table>
         </div>
     </div>
-</div> 
- 
+</div>

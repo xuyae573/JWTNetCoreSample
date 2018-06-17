@@ -147,3 +147,176 @@ INFO  2018-06-17 03:58:32,702 [8    ] Microsoft.AspNetCore.Mvc.ChallengeResult -
 INFO  2018-06-17 03:58:32,709 [8    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
 INFO  2018-06-17 03:58:32,724 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 64.6094ms
 INFO  2018-06-17 03:58:32,736 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 236.1705ms 401 
+INFO  2018-06-17 13:33:50,163 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 13:33:50,163 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 13:33:50,350 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 430.7982ms 200 
+INFO  2018-06-17 13:33:52,346 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2429.9833ms 200 text/html
+INFO  2018-06-17 13:33:56,170 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 13:33:57,148 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 975.6078ms 200 application/json;charset=utf-8
+INFO  2018-06-17 13:41:25,503 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/userinformation  
+INFO  2018-06-17 13:41:25,667 [8    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 13:41:25,675 [8    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 13:41:25,739 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 235.4546ms 404 
+INFO  2018-06-17 13:41:50,255 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/UserInfomration  
+INFO  2018-06-17 13:41:50,263 [8    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 13:41:50,269 [8    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 13:41:50,667 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 13:41:50,726 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.UserInfomrationController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:41:50,749 [8    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-06-17 13:41:50,768 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.UserInfomrationController.Get (ProductAPI) in 109.334ms
+INFO  2018-06-17 13:41:50,792 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 555.2784ms 200 text/plain; charset=utf-8
+INFO  2018-06-17 13:42:06,926 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Products  
+INFO  2018-06-17 13:42:06,954 [11   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 13:42:06,964 [11   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 13:42:06,985 [11   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 13:42:06,992 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:42:19,433 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 12342.4716ms
+ERROR 2018-06-17 13:42:21,124 [11   ] e.Diagnostics.ExceptionHandlerMiddleware - An unhandled exception has occurred: Year, Month, and Day parameters describe an un-representable DateTime.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at ProductAPI.Service.ProductService.GetProducts() in C:\Users\XuYa\source\repos\JWTNetCoreSample\Services\Product Service\ProductAPI\Service\ProductService.cs:line 11
+   at ProductAPI.Controllers.ProductsController.Get() in C:\Users\XuYa\source\repos\JWTNetCoreSample\Services\Product Service\ProductAPI\Controllers\ProductsController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+INFO  2018-06-17 13:42:22,099 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15129.7762ms 500 application/json
+INFO  2018-06-17 13:44:07,486 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 13:44:07,486 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 13:44:07,649 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 271.6275ms 200 
+INFO  2018-06-17 13:44:08,869 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1463.8215ms 200 text/html
+INFO  2018-06-17 13:44:10,004 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 13:44:12,193 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2183.0488ms 200 application/json;charset=utf-8
+INFO  2018-06-17 13:44:24,069 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Products  
+INFO  2018-06-17 13:44:24,138 [8    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 13:44:24,159 [8    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 13:44:24,299 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 13:44:24,351 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:44:24,381 [8    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value SimpleCommerce.Core.Domain.GenericAPIResponse.
+INFO  2018-06-17 13:44:24,448 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 139.524ms
+INFO  2018-06-17 13:44:24,457 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 385.6329ms 200 application/json; charset=utf-8
+INFO  2018-06-17 13:44:52,224 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Products  
+INFO  2018-06-17 13:44:52,268 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 13:44:52,296 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 13:44:52,306 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 13:44:52,312 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:44:52,320 [10   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value SimpleCommerce.Core.Domain.GenericAPIResponse.
+INFO  2018-06-17 13:44:52,326 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 24.8053ms
+INFO  2018-06-17 13:44:52,336 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 200.2139ms 200 application/json; charset=utf-8
+INFO  2018-06-17 13:44:53,819 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Products  
+INFO  2018-06-17 13:44:53,882 [9    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 13:44:53,886 [9    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 13:44:53,889 [9    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 13:44:53,897 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:44:53,901 [9    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value SimpleCommerce.Core.Domain.GenericAPIResponse.
+INFO  2018-06-17 13:44:53,906 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 15.7928ms
+INFO  2018-06-17 13:44:53,915 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 123.1403ms 200 application/json; charset=utf-8
+INFO  2018-06-17 13:45:03,937 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/Products  
+INFO  2018-06-17 13:45:03,982 [10   ] uthorization.DefaultAuthorizationService - Authorization failed for user: (null).
+INFO  2018-06-17 13:45:04,020 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+INFO  2018-06-17 13:45:04,053 [10   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2018-06-17 13:45:04,064 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was challenged.
+INFO  2018-06-17 13:45:04,070 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 127.2139ms
+INFO  2018-06-17 13:45:04,096 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 274.5471ms 401 
+INFO  2018-06-17 13:48:34,672 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 13:48:34,728 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 13:48:36,035 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1856.4548ms 200 
+INFO  2018-06-17 13:48:40,583 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6113.853ms 200 text/html
+INFO  2018-06-17 13:48:41,355 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 13:48:42,524 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 886.6077ms 200 application/json;charset=utf-8
+INFO  2018-06-17 13:49:28,535 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/products  0
+INFO  2018-06-17 13:49:28,617 [4    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 13:49:28,623 [4    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 13:49:28,762 [4    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 13:49:28,784 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 13:49:28,795 [4    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value SimpleCommerce.Core.Domain.GenericAPIResponse.
+INFO  2018-06-17 13:49:28,821 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 81.0289ms
+INFO  2018-06-17 13:49:28,839 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 319.6915ms 200 application/json; charset=utf-8
+INFO  2018-06-17 13:58:48,445 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 13:58:48,448 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 13:58:49,920 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1717.4766ms 200 
+INFO  2018-06-17 13:58:55,210 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7052.1489ms 200 text/html
+INFO  2018-06-17 13:58:57,980 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 13:58:58,620 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 646.2477ms 200 application/json;charset=utf-8
+INFO  2018-06-17 14:03:05,573 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/products  0
+INFO  2018-06-17 14:03:05,675 [9    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 14:03:05,678 [9    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 14:03:05,911 [9    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 14:03:05,946 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 14:03:05,957 [9    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value SimpleCommerce.Core.Domain.GenericAPIResponse.
+INFO  2018-06-17 14:03:05,990 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 88.9083ms
+INFO  2018-06-17 14:03:06,011 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 423.5738ms 200 application/json; charset=utf-8
+INFO  2018-06-17 14:13:59,041 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 14:13:59,392 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 14:14:01,714 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3283.0558ms 200 
+INFO  2018-06-17 14:14:13,823 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15309.2998ms 200 text/html
+INFO  2018-06-17 14:14:15,825 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 14:14:16,757 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1218.197ms 200 application/json;charset=utf-8
+INFO  2018-06-17 14:15:01,271 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/products  0
+INFO  2018-06-17 14:15:01,417 [9    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 14:15:01,420 [9    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 14:15:01,693 [9    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 14:15:01,727 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 14:15:01,742 [9    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value SimpleCommerce.Core.Domain.GenericAPIResponse.
+INFO  2018-06-17 14:15:01,798 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 88.6341ms
+INFO  2018-06-17 14:15:01,818 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 531.5137ms 200 application/json; charset=utf-8
+INFO  2018-06-17 14:22:19,172 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:5106/  0
+INFO  2018-06-17 14:22:19,225 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/index.html  
+INFO  2018-06-17 14:22:20,457 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1550.8315ms 200 
+INFO  2018-06-17 14:22:27,451 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8831.5994ms 200 text/html
+INFO  2018-06-17 14:22:28,169 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/swagger/v1/swagger.json  
+INFO  2018-06-17 14:22:29,362 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1051.9236ms 200 application/json;charset=utf-8
+INFO  2018-06-17 14:23:47,023 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5106/api/products  0
+INFO  2018-06-17 14:23:47,112 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-06-17 14:23:47,116 [12   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: JwtBearer was successfully authenticated.
+INFO  2018-06-17 14:23:47,428 [12   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: Arthur.
+INFO  2018-06-17 14:23:47,467 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method ProductAPI.Controllers.ProductsController.Get (ProductAPI) with arguments ((null)) - ModelState is Valid
+INFO  2018-06-17 14:23:47,484 [12   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value SimpleCommerce.Core.Domain.GenericAPIResponse.
+INFO  2018-06-17 14:23:47,532 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 114.2618ms
+INFO  2018-06-17 14:23:47,539 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 516.3159ms 200 application/json; charset=utf-8
